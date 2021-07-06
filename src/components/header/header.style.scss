@@ -1,7 +1,7 @@
 .header{
     height: 70px;
     width: 100%;
-    // background-color: aquamarine;
+    // background-color: yellow;
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
@@ -18,9 +18,12 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
+        // background-color: orange;
 
-        .option{
-            padding: 10px 15px;
+        .option {
+            // background-color: #444;
+            padding: 10px 10px;
+            cursor: pointer;
         }
     }
 }
