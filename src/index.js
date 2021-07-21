@@ -1,5 +1,8 @@
 import React from 'react';
+import store from './redux/store'
+
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux'
 import { BrowserRouter as Router } from 'react-router-dom'
 
 import './index.css';
@@ -7,11 +10,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-    <Router>
-        <App />
-    </Router>,
+    <Provider store={store}>
+        <Router>
+            <App />
+        </Router>
+    </Provider>,
     document.getElementById('root')
-);
+); 
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
